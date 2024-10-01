@@ -1,0 +1,132 @@
+<html><head><base href="https://websim.co/ai-business-course/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI for Business: Innovation and Productivity Resources</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  h1, h2 {
+    color: #2c3e50;
+  }
+  .resource-section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .resource-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .resource-list li {
+    margin-bottom: 10px;
+  }
+  .resource-list li::before {
+    content: "🔗 ";
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <h1>AI for Business: Innovation and Productivity Resources</h1>
+  
+  <div class="resource-section">
+    <h2>1. Introduction to AI in Business</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.forbes.com/sites/bernardmarr/2018/09/07/the-amazing-ways-how-ai-and-machine-learning-is-used-in-todays-amazing-businesses/">Forbes: How AI and Machine Learning Are Used in Today's Businesses</a></li>
+      <li><a href="https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning">McKinsey: Notes from the AI frontier</a></li>
+      <li><a href="https://africanbusinessmagazine.com/sectors/technology/how-ai-is-transforming-african-businesses/">African Business Magazine: How AI is Transforming African Businesses</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-section">
+    <h2>2. AI in Large Enterprises</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.ibm.com/watson/stories/">IBM Watson Success Stories</a></li>
+      <li><a href="https://aws.amazon.com/machine-learning/customers/">AWS Machine Learning Customer Stories</a></li>
+      <li><a href="https://www.salesforce.com/products/einstein/overview/">Salesforce Einstein AI for CRM</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-section">
+    <h2>3. AI for Small Businesses and Startups</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.shopify.com/blog/ai-tools">Shopify: AI Tools for Small Businesses</a></li>
+      <li><a href="https://www.hootsuite.com/platform/ai">Hootsuite: AI-Powered Social Media Management</a></li>
+      <li><a href="https://www.zoho.com/crm/crmplus/zia/">Zoho CRM: Zia AI Assistant</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-section">
+    <h2>4. AI-Driven Innovation Trends</h2>
+    <ul class="resource-list">
+      <li><a href="https://openai.com/blog/chatgpt">OpenAI: ChatGPT and GPT-3</a></li>
+      <li><a href="https://www.tableau.com/learn/articles/predictive-analytics-examples">Tableau: Predictive Analytics Examples</a></li>
+      <li><a href="https://techcrunch.com/category/artificial-intelligence/">TechCrunch: Latest AI News and Startups</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-section">
+    <h2>5. African AI Initiatives and Startups</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.deeplearningindaba.com/">Deep Learning Indaba</a></li>
+      <li><a href="https://www.paystack.com/blog/product-updates">Paystack: AI in African Fintech</a></li>
+      <li><a href="https://www.interswitchgroup.com/news">Interswitch: Innovation in African Payments</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-section">
+    <h2>Additional Learning Resources</h2>
+    <ul class="resource-list">
+      <li><a href="https://www.coursera.org/learn/ai-for-everyone">Coursera: AI For Everyone by Andrew Ng</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLO4GrDnQanVe6F6MRJg_KO7JEoH-ukFzY">YouTube: AI for Business Playlist</a></li>
+      <li><a href="https://www.edx.org/course/artificial-intelligence-ai-for-business">edX: AI for Business</a></li>
+    </ul>
+  </div>
+
+  <!--p>Ready to take the next step in your AI journey? Join our online community to discuss ideas, share experiences, and get expert advice!</p>
+  <a href="https://forum.websim.co/ai-business" class="cta-button">Join Our AI Business Forum</a-->
+
+  <script>
+    // Simple script to track resource clicks
+    document.querySelectorAll('.resource-list a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const resourceName = e.target.textContent;
+        const resourceUrl = e.target.href;
+        console.log(`Resource clicked: ${resourceName} (${resourceUrl})`);
+        // Here you could send this data to an analytics service
+      });
+    });
+
+    // Add a welcome message based on time of day
+    const hour = new Date().getHours();
+    let greeting;
+    if (hour < 12) greeting = "Good morning";
+    else if (hour < 18) greeting = "Good afternoon";
+    else greeting = "Good evening";
+    
+    const welcomeMessage = document.createElement('p');
+    welcomeMessage.textContent = `${greeting}! Welcome to your AI business resource hub. Let's innovate together!`;
+    document.body.insertBefore(welcomeMessage, document.body.firstChild);
+  </script>
+</body>
+</html>
